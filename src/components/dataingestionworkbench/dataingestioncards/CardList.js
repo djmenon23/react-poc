@@ -10,12 +10,12 @@ const CardList = () => (
         <Card.Header>Relational Database-HDFS</Card.Header>
       </Card.Content>
       <Card.Content extra>
-      <Button animated>
+      <Link to='/data-ingestion-form'><Button animated>
       <Button.Content visible>Launch</Button.Content>
       <Button.Content hidden>
         <Icon name='arrow right' />
       </Button.Content>
-    </Button>
+    </Button></Link>
       </Card.Content>
     </Card>
     <Card raised>

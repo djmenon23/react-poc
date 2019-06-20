@@ -4,6 +4,9 @@ import NavBar from './components/navbar/Navbar';
 import Dashboard from './components/dashboard/Dashboard';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import DataIngestionHome from './components/dataingestionworkbench/dataingestionhome/DataIngestionHome';
+import CreateIngestion from './components/dataingestionworkbench/dataingestionform/CreateIngestion';
+
+
 
 function App() {
   return (
@@ -21,6 +24,11 @@ function App() {
                 path="/data-ingestion"
                 exact={true}
                 render={props => <DataIngestionHome />}
+              />
+                <Route
+                path="/data-ingestion-form"
+                exact={true}
+                render={props => <CreateIngestion/>}
               />
             </Switch>
           </div>
